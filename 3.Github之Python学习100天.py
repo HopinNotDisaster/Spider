@@ -23,7 +23,6 @@ for link_title in link_titles:
     # link_res = re.findall(r'OrgOwned":true},"currentUser":null,"refInfo":(.*?)]', link_res)
     link_res = link_res[0][437:-2]
     link_res = link_res[164:]
-    # ac = '{"name":"master","listCacheKey":"v0:1616209617.029024","canEdit":false,"refType":"branch","currentOid":"4e75007195aa4cdbcb899aeb06b9b08996a4606c"},"tree":{"items":['
     # print(len(ac))
     print(link_res)
     name = re.findall(r'"name":(.*?),"path":".*?","contentType":"directory"}', link_res)
